@@ -48,7 +48,9 @@ form {
 
 .form-container {
     display: flex;
-    gap: 50px
+    gap: 50px;
+    flex-wrap: wrap;
+
 }
 
 form input {
@@ -67,6 +69,10 @@ form button {
     cursor: pointer;
     padding: 8px;
     border: none;
+}
+
+.botao-2 {
+    display: none;
 }
 
 table {
@@ -105,4 +111,106 @@ table td img {
 
 .reprovado {
     background-color: red;
+}
+
+@media (max-width: 800px) {
+
+    .form-container {
+        gap: 10px;
+    
+    }
+}
+
+@media (max-width: 725px) {
+    body {
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media (max-width: 620px) {
+    body {
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .botao {
+        display: none;
+    }
+
+    .botao-2 {
+        display:block;
+    }
+}
+
+@media (max-width: 515px) {
+    header h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    form input {
+        font-size: 18px;
+        padding: 8px;
+    }
+    
+    form button {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    table th {
+        padding: 12px;
+        font-size: 18px;
+    }
+    
+    table td {
+        padding: 12px 0;
+        font-size: 14px;
+    }
+    
+    table td img {
+        height: 20px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    header img {
+        margin-bottom: 20px; 
+    }
+
+    header h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    #form-atividade {
+        margin-bottom: 20px;
+    }
+
+    form input {
+        font-size: 14px;
+        padding: 4px;
+    }
+    
+    form button {
+        font-size: 14px;
+        padding: 4px;
+    }
+
+    table th {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    table td {
+        padding: 8px 0;
+        font-size: 10px;
+    }
+    
+    table td img {
+        height: 16px;
+    }
 }
