@@ -12,7 +12,7 @@
 
 body {
     background-color: #e7e7e7;
-    margin-top: 100px;
+    padding: 100px;
 }
 
 header {
@@ -23,11 +23,13 @@ header {
 header img {
     height: 36px;
     margin-right: 16px;
+    margin-bottom: 50px;
 }
 
 header h1 {
     font-size: 40px;
     font-weight: bold;
+    margin-bottom: 50px;
 }
 
 .container {
@@ -44,6 +46,11 @@ form {
     margin-bottom: 56px;
 }
 
+.form-container {
+    display: flex;
+    gap: 50px
+}
+
 form input {
     font-size: 24px;
     background-color: #fff;
@@ -56,9 +63,10 @@ form button {
     background-color: #009432;
     color: #fff;
     font-size: 24px;
-    font-weight: bolder;
+    font-weight: bold;
     cursor: pointer;
     padding: 8px;
+    border: none;
 }
 
 table {
@@ -76,7 +84,7 @@ table td {
     padding: 16px 0;
     text-align: center;
     font-size: 18px;
-    border-bottom: 1px solid #rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 table td img {
@@ -85,7 +93,7 @@ table td img {
 
 .resultado {
     padding: 8px;
-    font-weight: bolder;
+    font-weight: bold;
     color: #fff;
     background-color: #000;
     border-radius: 3px;

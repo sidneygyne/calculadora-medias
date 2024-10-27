@@ -28,15 +28,14 @@
     <div class="container">
 
         <header>
-            <img src="" alt="capelo diploma" />
+            <img src="./assets/logo.png" alt="capelo diploma" />
             <h1>Calculadora de médias</h1>
         </header>
 
         <main>
 
             <form id="form-atividade">
-                <div>
-                    <label>Nome</label>
+                <div class="form-container">
                     <input type="text" id="nome-atividade" placeholder="Nome da atividade" required />
                     <input type="number" id="nota-atividade" placeholder="Nota da atividade" required min="0" max="10" />
                     <button type="submit">Adicionar +</button>
@@ -60,7 +59,7 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td>---</td>
+                        <td>Média final</td>
                         <td id="media-final-valor">---</td>
                         <td id="media-final-resultado"><span>---</span></td>
                     </tr>
